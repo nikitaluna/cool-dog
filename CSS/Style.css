@@ -1,3 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+h1 {
+  font-size:150px;
+  font-family: 'Oswald', sans-serif
+}
 body {
-    background-color:pink;
+  background-color:rgb(222, 224, 249);
+}
+.Topic-list { 
+  font-family: 'Montserrat', sans-serif;
+  font-size:40px;
+  color:rgb(75, 7, 117);
+  list-style-type:none;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+li {
+    padding: 20px;
+    padding-bottom: 0px 
+}
+#Description-of-website {
+  font-family:  'Yanone Kaffeesatz', sans-serif;
+  font-size:50px;
+  color:rgb(72, 56, 124)
+ 
+}
+#Main-body {
+  border:8px inset rgb(148, 156, 232);
+  padding:10px;
+  margin-bottom:100px;
+}
+.Main-body-content {
+  display:flex;
+  flex-direction:row; 
+  justify-content:center;
+  align-items: center;
+  margin:auto;
+  padding-top:0px;
+}
+.Topic-list {
+  margin-left:40px; 
+}
+
+.rainbow {
+   animation: rainbow 10s linear infinite;
+   padding:24px;
+}
+@keyframes rainbow {
+  0% {
+      color: violet;
+  }
+  14% {
+      color: red;
+  }
+  28% {
+      color: rgb(66, 78, 244);
+  }
+  42% {
+      color: rgb(89, 249, 164);
+  }
+  56% {
+      color:rgb(237, 103, 239);
+  }
+  70% {
+      color: blue;
+  }
+  84% {
+      color: indigo;
+  }
+  100% {
+      color: green;
+  }
+}
+a:visited {
+    color:rgb(66, 17, 109); 
+
+
+}
+
+a:link {
+  color: rgb(104, 61, 244);
+   list-style-type:none;
+}
+/* mouse over link */
+a:hover {
+    color:rgb(230, 168, 255);
+}
+
+.top-3-computers {
+   display:flex;
+  flex-direction:column; 
+  justify-content:center;
+  align-items: center;
+  margin:auto;
+ font-family:  'Yanone Kaffeesatz', sans-serif;
+  font-size:30px;
+  color:rgb(37, 24, 94);
+  margin-bottom:30px;
+  padding:40px;
+    border:20px solid rgb(37, 24, 94);
+}
+
+
+.about-dell-xps {
+     display:flex;
+  flex-direction:row; 
+  justify-content:center;
+  align-items: center;
+  margin:auto;
+ font-family:  'Yanone Kaffeesatz', sans-serif;
+  font-size:30px;
+  color:rgb(37, 24, 94);
+  margin-bottom:30px;
+  padding:40px;
+    border:20px solid rgb(95, 41, 153);
+}
+.about-lg-gram {
+    display:flex;
+  flex-direction:row; 
+  justify-content:center;
+  align-items: center;
+  margin:auto;
+ font-family:  'Yanone Kaffeesatz', sans-serif;
+  font-size:30px;
+  color:rgb(37, 24, 94);
+  margin-bottom:30px;
+  padding:40px;
+    border:20px solid rgb(95, 41, 153) 
+}
+.about-macbookpro {
+     display:flex;
+  flex-direction:row; 
+  justify-content:center;
+  align-items: center;
+  margin:auto;
+ font-family:  'Yanone Kaffeesatz', sans-serif;
+  font-size:30px;
+  color:rgb(37, 24, 94);
+  margin-bottom:30px;
+  padding:40px;
+    border:20px solid rgb(95, 41, 153) 
 }
