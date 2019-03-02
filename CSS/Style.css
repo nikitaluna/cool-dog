@@ -49,6 +49,11 @@ li {
   color:rgb(72, 56, 124)
  
 }
+#greeting {
+  font-family:  'Yanone Kaffeesatz', sans-serif;
+  font-size:50px;
+  color:rgb(54, 17, 127);
+}
 #Main-body {
   border:8px inset rgb(148, 156, 232);
   padding:10px;
@@ -140,8 +145,11 @@ a:hover {
         border-radius: 15px;
 
 }
+nav select {
+  display: none;
+}
 
-@media only screen and (max-width: 600px) { 
+/*  @media only screen and (max-width: 600px) { 
 .Topic-list { 
   font-family: 'Montserrat', sans-serif;
   font-size:40px;
@@ -158,9 +166,22 @@ a:hover {
 }
     
     
-    
-    
+  
+} */ 
 
+@media (max-width: 800px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block; border-radius: 15px;}
+  .Topic-list {
+    display:none;
+  }
+  nav select {
+  font-family: 'Montserrat', sans-serif;
+  font-size:40px;
+  color:rgb(75, 7, 117);
+  background-image:url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/06/36/6856299993ea2f8.jpg");
+  position: relative;
+  
 
-
+  }
 }

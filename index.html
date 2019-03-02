@@ -10,11 +10,22 @@
 <div id= "Main-body">
     <nav>  <ul class = "Topic-list"> 
     <li> <a href="index.html"> Home </a> </li>
-      <li><a href="top-computers.html"> Computers </a> </li> 
-      <li><a href= "top-phones.html">Phones </a> </li>
-      <li><a href= "top-smartwatches.html"> Smartwatches </a></li>
-      <li><a href="top-tablets.html">Tablets </a></li>
+    <li><a href="top-computers.html"> Computers </a> </li> 
+    <li><a href= "top-phones.html">Phones </a> </li>
+    <li><a href= "top-smartwatches.html"> Smartwatches </a></li>
+    <li><a href="top-tablets.html">Tablets </a></li>
     </ul>
+    
+    
+  <select onChange="window.location.replace(this.options[this.selectedIndex].value)"> 
+    <option value="" selected="selected">Menu</option> 
+    <option value="index.html">Home</option> 
+    <option value="top-computers.html">Computers</option> 
+    <option value="top-phones.html">Phones</option> 
+    <option value="top-smartwatches.html">Smartwatches</option> 
+    <option value="top-tablets.html">Tablets</option> 
+  </select> 
+
     </nav>
  <div class="Main-body-content">
      
@@ -22,6 +33,23 @@
 
 
       <img src = "http://clipart-library.com/image_gallery2/Technology.png" alt "Technology Tree" width="400px" height="400px">
+          <label id="greeting"></label>
+<script>
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('greeting').innerHTML =
+        '<b>' + greet + '</b> and welcome to Top Tech';
+</script> 
         <p id = "Description-of-website"> This website rates tech and provides links to the best reviews of the product. Click on a topic to see more information. </p>
  
   </div>

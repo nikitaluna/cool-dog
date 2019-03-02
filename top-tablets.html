@@ -3,15 +3,26 @@
     <head>
                 <link rel="stylesheet" type="text/css" href="CSS/Style.css">
      
-      <title> Top Smartwatches</title>
+      <title> Top Tablets</title>
         <div id= "Main-body">
-     <ul class = "Topic-list"> 
+      <nav>  <ul class = "Topic-list"> 
     <li> <a href="index.html"> Home </a> </li>
       <li><a href="top-computers.html"> Computers </a> </li> 
       <li><a href= "top-phones.html">Phones </a> </li>
       <li><a href= "top-smartwatches.html"> Smartwatches </a></li>
       <li><a href="top-tablets.html">Tablets </a></li>
     </ul>
+    
+   
+  <select onChange="window.location.replace(this.options[this.selectedIndex].value)"> 
+    <option value="" selected="selected">Menu</option> 
+    <option value="index.html">Home</option> 
+    <option value="top-computers.html">Computers</option> 
+    <option value="top-phones.html">Phones</option> 
+    <option value="top-smartwatches.html">Smartwatches</option> 
+    <option value="top-tablets.html">Tablets</option> 
+  </select> 
+    </nav>
     </head>
     
     
